@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Lab11Angular": {
+    "lab12": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Lab11Angular:build:production"
+              "buildTarget": "lab12:build:production"
             },
             "development": {
-              "buildTarget": "Lab11Angular:build:development"
+              "buildTarget": "lab12:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,16 @@
+<!--<p>list-component works!</p>-->
+
+<h2>Lista osob</h2>
+
+<button routerLink="/add">Dodaj</button>
+
+<ul>
+  @for (p of persons; track $index) {
+    <li>
+      <a [routerLink]="['/details', $index]">
+        {{ p.firstName }} {{ p.familyName }} – {{ p.age }}
+      </a>
+      <button (click)="delete($index)">Usuń</button>
+    </li>
+  }
+</ul>
